@@ -1,3 +1,7 @@
 #vizContainer{
     width: 600px;
 }
+
+.content {
+    max-width: 90%;
+  }

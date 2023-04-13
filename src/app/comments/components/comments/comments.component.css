@@ -1,0 +1,30 @@
+
+.comments {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .comment-form-title {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .comments-container {
+    margin-top: 1rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .comments {
+      flex-direction: row;
+    }
+
+    .comment-form-title {
+      margin-top: 0;
+      margin-right: 1rem;
+    }
+
+    .comments-container {
+      flex: 1;
+      margin-top: 0;
+    }
+  }

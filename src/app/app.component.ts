@@ -3,7 +3,6 @@ import {Observable, Observer} from 'rxjs';
 import { MatTabChangeEvent } from "@angular/material/tabs";
 
 import { TableComponent } from "./dashboard/table/table.component";
-import { DashboardComponent } from "./dashboard/dashboard/dashboard.component";
   import { CommentsComponent } from "./comments/components/comments/comments.component";
 export interface Tile {
   color: string;
@@ -31,7 +30,6 @@ export class AppComponent implements OnInit {
     this.asyncTabs = new Observable((observer: Observer<ExampleTab[]>) => {
       setTimeout(() => {
         observer.next([
-          { label: "Dashboard", content: DashboardComponent, cssClass: "dashboardComponent" },
           { label: "Table", content: TableComponent, cssClass:"tableComponent" },
           { label: "Comments", content: CommentsComponent, cssClass: "commentsComponent" }
         ]);

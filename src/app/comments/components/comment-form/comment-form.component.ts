@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'comment-form',
-  templateUrl: './commentForm.component.html',
+  templateUrl: './comment-form.component.html',
 })
 export class CommentFormComponent implements OnInit {
   @Input() submitLabel!: string;

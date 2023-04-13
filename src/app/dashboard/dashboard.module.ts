@@ -4,11 +4,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CommentsModule } from '../comments/comments.module';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { TableComponent } from './table/table.component';
 
-import { DashboardComponent } from './dashboard/dashboard.component';
 @NgModule({
 
-  declarations: [DashboardComponent],
+  declarations: [TableComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
@@ -16,6 +16,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatToolbarModule,
     MatGridListModule
   ],
-  exports: [DashboardComponent]
+  exports: [TableComponent]
 })
 export class DashboardModule { }
