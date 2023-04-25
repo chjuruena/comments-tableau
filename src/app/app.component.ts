@@ -3,7 +3,9 @@ import {Observable, Observer} from 'rxjs';
 import { MatTabChangeEvent } from "@angular/material/tabs";
 
 import { TableComponent } from "./dashboard/table/table.component";
+
   import { CommentsComponent } from "./comments/components/comments/comments.component";
+import { CommentsDashComponent } from "./comments/components/comments-dash/comments-dash.component";
 export interface Tile {
   color: string;
   cols: number;
@@ -31,7 +33,7 @@ export class AppComponent implements OnInit {
       setTimeout(() => {
         observer.next([
           { label: "Table", content: TableComponent, cssClass:"tableComponent" },
-          { label: "Comments", content: CommentsComponent, cssClass: "commentsComponent" }
+          { label: "Comments", content: CommentsDashComponent, cssClass: "commentsComponent" }
         ]);
       }, 1000);
     });

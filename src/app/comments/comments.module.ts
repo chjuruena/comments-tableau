@@ -7,10 +7,10 @@ import { CommentsComponent } from './components/comments/comments.component';
 import { CommentsService } from './services/comments.service';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-
+import { CommentsDashComponent } from './components/comments-dash/comments-dash.component';
 @NgModule({
   imports: [CommonModule, ReactiveFormsModule, MatFormFieldModule,MatInputModule ],
-  declarations: [CommentsComponent, CommentComponent, CommentFormComponent ],
+  declarations: [CommentsComponent, CommentComponent, CommentFormComponent, CommentsDashComponent],
   providers: [CommentsService],
   exports: [CommentsComponent],
 })
